@@ -1,0 +1,121 @@
+html,
+body,
+div,
+img,
+p {
+	margin: 0;
+	padding:0;
+}
+.container {
+	width: 540px;
+	padding: 10px;
+	border:1px solid #ccc;
+	margin: 100px auto 0;
+}
+.intro {
+	font-size: 14px;
+	font-weight: 900;
+	color: #333;
+}
+.intro span {
+	font-weight: 100;
+	padding: 0 5px;
+	color: #999;
+}
+.type,
+.region,
+.time {
+	width: 100%;
+	margin-top:10px;
+	font-size:12px; 
+}
+.type span,
+.region span,
+.time span{ 
+	padding:2px 4px 2px; 
+	color: blue;
+	cursor: pointer;
+}
+.type .caption,
+.region .area,
+.time .date {
+	padding-left:0;
+	color: #999;
+}
+.type .selected,
+.region .selected,
+.time .selected {
+	background: #388bff;
+	color:#fff;
+}
+.sort-key {
+	margin-top:15px;
+	height: 28px;
+	line-height: 28px;
+	border-bottom: 1px solid #ccc;
+	background: #eee;
+}
+.sort-key .item {
+	float: left;
+	height:26px;
+	font-size: 12px;
+	color: #666;
+	padding:0 15px;
+	border-style:solid;
+	border-width: 2px 1px 1px;
+	border-color: transparent;
+	cursor: pointer;
+
+}
+.sort-key .item.selected{
+	color:#000;
+	background: #fff;
+	border-color: #388bff #ccc #fff;
+}
+.content {
+	overflow: hidden;
+	margin-top:10px; 
+	text-align: center;
+}
+.content .move-con {
+	float: left;
+	width: 120px;
+	margin:10px 20px 0 0;
+}
+.content .move-con img {
+	width: 100%;
+}
+.content .move-con:nth-child(4n){
+	margin-right: 0;
+}
+.content .move-con p {
+	white-space: nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+.content .move-con .name {
+	margin-top:10px;
+	font-size: 12px;
+	color: blue;
+}
+.content .move-con .score {
+	margin-top:10px;
+	font-size: 12px;
+}
+.page {
+	margin-top:20px;
+	width: 100%;
+	text-align: center;
+}
+.page span {
+	font-size: 14px;
+	color:blue;
+	padding: 4px 6px;
+	border:1px solid #eee;
+	cursor: pointer;
+}
+.page .selected {
+	border:0;
+	color:#333;
+	font-weight: 900;
+}
